@@ -1,17 +1,17 @@
-<style>
   body{
-       background-color: #09A7A1;
-  }
-  h1,h3{
+    background-color:whitesmoke;
+}
+h1,h3{
        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
        color: blue;
        text-align: center;
   }
   h4 {
     text-align: center;
-    background-color: rgba(45, 45, 45, 0.1);
+    background-color:rgba(4, 161, 148, 0.5);
     padding: 10px;
     font-size: 27px;
+    color:darkviolet;
   }
   p {
     text-align: justify;
@@ -37,4 +37,3 @@
   .cardText {
     margin-bottom: 30px;
   }
-</style>
