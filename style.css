@@ -1,6 +1,6 @@
 <style>
   body{
-       background-color: ##FF790E;
+       background-color:#09A7A1;
   }
   h1,h3{
        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -31,7 +31,7 @@
     border-radius: 5px;
     margin: 10px 5px;
     padding: 4px;
-    background-color:#09A7A1;
+    
   }
   .cardContent {
     padding: 10px;
