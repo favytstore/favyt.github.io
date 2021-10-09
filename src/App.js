@@ -7,12 +7,11 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          This page belongs to Favyt: Your Favorite Collections!!
+          This page belongs to Favyt : Your Favorite Collections!!
         </p>
         <a
           className="App-link"
-          href="www.favyt.in"
-          target="_blank"
+          href="#"
           rel="noopener noreferrer"
         >
           Favyt
