@@ -1,16 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import {BrouserRouter, Switch, Route, NavLink} from 'react-router-dom';
+import {BrowserRouter, Switch, Route, NavLink} from 'react-router-dom';
 import Login from './frontend/componets/Login';
 import Dashboard from './frontend/componets/Dashboard';
 import Home from './frontend/componets/Home';
 
-
 function App() {
   return (
     <div className="App">
-      <BrouserRouter>
+      <BrowserRouter>
         <div>        
           <div className="header">
             <NavLink exact activeClassName = 'active' to ='/'>Home</NavLink>
@@ -25,7 +24,7 @@ function App() {
               </Switch>
           </div>
         </div>
-      </BrouserRouter>
+      </BrowserRouter>
     </div>
   );
 }
