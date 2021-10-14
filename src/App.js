@@ -5,6 +5,8 @@ import {BrowserRouter, Switch, Route, NavLink} from 'react-router-dom';
 import Login from './frontend/componets/Login';
 import Dashboard from './frontend/componets/Dashboard';
 import Home from './frontend/componets/Home';
+import PrivateRoute from './utilities/PrivateRoute';
+import PublicRoute from './utilities/PublicRoute';
 
 function App() {
   return (
@@ -19,8 +21,8 @@ function App() {
           <div className="contect">
               <Switch>
                 <Route exact path='/' component={Home} />
-                <Route path='/login' component={Login} />
-                <Route path='/dashboard' component={Dashboard} />
+                <PublicRoute path='/login' component={Login} />
+                <PrivateRoute path='/dashboard' component={Dashboard} />
               </Switch>
           </div>
         </div>
