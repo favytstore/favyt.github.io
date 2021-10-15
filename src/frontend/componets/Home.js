@@ -2,7 +2,7 @@ import React from "react";
 function Home(){
     return(
         <div>
-            <p>Welcome to Favyt : Your Favorite Collection!!!</p>
+            <p><h1>Welcome to Favyt : Your Favorite Collection!!!</h1></p>
         </div>
     );
 }
