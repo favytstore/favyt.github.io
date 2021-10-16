@@ -11,3 +11,6 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended : true}))
+
+
+app.listen(port,()=> {console.log("Server started at " +port)})
