@@ -9,7 +9,6 @@ const connectDB = async () => {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     });
-
     mongoose.connection.on("connected", () => {
         console.log("MongoDB Atlas Server is connected");
     });

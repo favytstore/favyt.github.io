@@ -1,7 +1,8 @@
 const express = require('express')
 const Connct_Mongo_DB = require('./dbConfig')
 const fileUpload = require('express-fileupload')
-
+const cors = require('cors')
+const initRoutes = require("./routes/web");
 const PORT = process.env.PORT || 4040;
 
 Connct_Mongo_DB(); // Initialisation of Mongodb connection
@@ -12,7 +13,8 @@ app.use(cors());
 app.use(fileUpload({ useTempFiles: true }))
 
 app.use(express.json());  // Middleware
-
-app.use('/upload',require('./routes/upload'));
+initRoutes(app);
+// require('./routes/customerRoute')(app)
+//app.use('/upload',require('./routes/upload'));
 
 app.listen(PORT,console.log(`Server is running on ${PORT}`))

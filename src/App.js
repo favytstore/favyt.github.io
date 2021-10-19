@@ -7,6 +7,8 @@ import Dashboard from './frontend/componets/Dashboard';
 import Home from './frontend/componets/Home';
 import PrivateRoute from './utilities/PrivateRoute';
 import PublicRoute from './utilities/PublicRoute';
+import Upload from './frontend/componets/Upload'
+
 
 function App() {
   return (
@@ -17,12 +19,14 @@ function App() {
             <NavLink exact activeClassName = 'active' to ='/'>Home</NavLink>
             <NavLink exact activeClassName = 'active' to ='/login'>Login</NavLink> <small>(Access without token only)</small>
             <NavLink exact activeClassName = 'active' to ='/dashboard'>Dashboard</NavLink><small>(Access with token only)</small>
+            <NavLink exact activeClassName = 'active' to ='/upload'>Upload</NavLink>
           </div>
           <div className="contect">
               <Switch>
                 <Route exact path='/' component={Home} />
                 <PublicRoute path='/login' component={Login} />
                 <PrivateRoute path='/dashboard' component={Dashboard} />
+                <Route path='/upload' component={Upload} />
               </Switch>
           </div>
         </div>
