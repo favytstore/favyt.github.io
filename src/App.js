@@ -21,7 +21,7 @@ function App() {
             <NavLink exact activeClassName = 'active' to ='/dashboard'>Dashboard</NavLink><small>(Access with token only)</small>
             <NavLink exact activeClassName = 'active' to ='/upload'>Upload</NavLink>
           </div>
-          <div className="contect">
+          <div className="content">
               <Switch>
                 <Route exact path='/' component={Home} />
                 <PublicRoute path='/login' component={Login} />
